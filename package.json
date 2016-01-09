@@ -1,0 +1,25 @@
+{
+  "name": "gamejamjs",
+  "version": "0.0.1",
+  "description": "Game engine based on three.js to allow rapid prototyping during short game jams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunken-entertainment/gamejamjs.git"
+  },
+  "keywords": [
+    "threejs",
+    "nodejs",
+    "game",
+    "engine"
+  ],
+  "author": "Sunken Entertainment",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunken-entertainment/gamejamjs/issues"
+  },
+  "homepage": "https://github.com/sunken-entertainment/gamejamjs#readme"
+}
