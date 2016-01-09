@@ -1,3 +1,7 @@
 #stats {
 	bottom: 53px; position: relative
 }
+
+html {
+	overflow: hidden;
+}
