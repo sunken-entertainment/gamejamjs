@@ -1,4 +1,6 @@
-# gamejamjs
+# GameJam.js
+
+GameJam.js is a boilerplate project based on Three.JS to allow rapid prototyping of browser-based multiplayer 3D-Games.
 
 ## Setup
 
