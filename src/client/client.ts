@@ -92,7 +92,7 @@ function init() {
     canvasParent().appendChild(stats.domElement);
 
     // render pipeline
-    renderPipeline = new RenderPipeline();
+    renderPipeline = new RenderPipeline(THREE);
 
     // scene
     clearScene();

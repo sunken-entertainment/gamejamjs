@@ -9,4 +9,4 @@ class RenderPipeline {
     }
 }
 
-export = RenderPipeline; 
+export = RenderPipeline;
