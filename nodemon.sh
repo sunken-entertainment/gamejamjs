@@ -1,0 +1,1 @@
+node node_modules/nodemon/bin/nodemon.js -e js,ts,json --ignore static/ --ignore build/ -x "sh" run.sh

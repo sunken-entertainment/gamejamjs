@@ -1,0 +1,17 @@
+{
+    "development": {
+        "port": 3000,
+        "logLevel": "info",
+        "title": "GameJam.js"
+    },
+    "test": {
+        "port": 3000,
+        "logLevel": "info",
+        "title": "GameJam.js"
+    },
+    "production": {
+        "port": 3000,
+        "logLevel": "error",
+        "title": "GameJam.js"
+    }
+}

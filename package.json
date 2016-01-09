@@ -2,7 +2,7 @@
   "name": "gamejamjs",
   "version": "0.0.1",
   "description": "Game engine based on three.js to allow rapid prototyping during short game jams",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +12,6 @@
   },
   "keywords": [
     "threejs",
-    "nodejs",
     "game",
     "engine"
   ],
@@ -23,7 +22,7 @@
   },
   "homepage": "https://github.com/sunken-entertainment/gamejamjs#readme",
   "dependencies": {
-    "browserify": "^12.0.2",
+    "express": "^4.13.3",
     "jade": "^1.11.0",
     "physijs-browserify": "0.0.2",
     "socket.io": "^1.4.3",
@@ -34,6 +33,7 @@
   },
   "devDependencies": {
     "browserify": "^12.0.2",
+    "nodemon": "^1.8.1",
     "typescript": "^1.7.5"
   }
 }
