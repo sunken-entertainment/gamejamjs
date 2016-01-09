@@ -1,6 +1,9 @@
 /// <reference path='../../declarations/node.d.ts' />
 /// <reference path='../../declarations/client/three.d.ts' />
+/// <reference path='../../declarations/client/stats-js.d.ts' />
 /// <reference path='../../declarations/client/jquery.d.ts' />
+
+/// <reference path='../../declarations/client/client.d.ts' />
 
 // dependencies
 var Stats = require('stats-js'),
@@ -10,7 +13,12 @@ var Stats = require('stats-js'),
 import RenderPipeline = require('./render-pipeline');
 
 // global vars
-var renderer, renderPipeline, scene, camera, light, stats, controls;
+var renderPipeline: RenderPipeline;
+var renderer: THREE.WebGLRenderer;
+var scene: THREE.Scene;
+var camera: THREE.PerspectiveCamera;
+var light: THREE.DirectionalLight;
+var stats: Stats;
 
 // ---------------------------------- exports ----------------------------------
 
@@ -28,11 +36,11 @@ export function clearScene() {
     initEffects();
 }
 
-export function getAvailableBuffers() {
-    return renderPipeline.getAvailableBuffers();
+export function getAvailableBuffers(): string[] {
+    return renderPipeline.availableBuffers();
 }
 
-export function setDisplayedBuffer(identifier) {
+export function setDisplayedBuffer(identifier: string) {
     renderPipeline.setDisplayedBuffer(identifier);
 }
 
@@ -106,7 +114,7 @@ function init() {
     resize();
 }
 
-function initEffects(width?, height?) {
+function initEffects(width?: number, height?: number) {
     if (typeof width === 'undefined' || typeof height === 'undefined') {
         var dim = getCanvasDimensions();
         width = dim[0];
@@ -116,11 +124,11 @@ function initEffects(width?, height?) {
     renderPipeline.init(renderer, camera, scene, width, height);
 }
 
-function canvasParent() {
+function canvasParent(): HTMLElement {
     return document.getElementById('canvas');
 }
 
-function getCanvasDimensions() {
+function getCanvasDimensions(): number[] {
     var ele = $(canvasParent());
     return [ele.width(), Math.max(window.innerHeight - ele.offset().top - 30, 500)];
 }

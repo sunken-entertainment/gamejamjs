@@ -20,6 +20,22 @@ class RenderPipeline {
     render() {
 		this.renderer.render(this.scene, this.camera);
     }
+
+    availableBuffers(): string[] {
+        return [];
+    }
+
+    setDisplayedBuffer(identifier: string): void {
+
+    }
+
+    supportedEffects(): string[] {
+        return [];
+    }
+
+    useEffect(identifier: string, use: boolean): void {
+
+    }
 }
 
 export = RenderPipeline;
