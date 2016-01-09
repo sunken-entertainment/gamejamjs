@@ -25,3 +25,4 @@ app.get('/', function (req, res) {
 });
 
 server.listen(config.port);
+console.log('Server listening on port %d', config.port);
